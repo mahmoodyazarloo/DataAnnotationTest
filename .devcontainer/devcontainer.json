@@ -1,0 +1,16 @@
+{
+  "name": "Custom Dev Container",
+  "image": "python:3.9-slim-buster",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "echo 'Container setup complete!'",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "esbenp.prettier-vscode"
+  ],
+  "remoteUser": "vscode"
+}
